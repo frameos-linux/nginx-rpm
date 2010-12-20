@@ -8,8 +8,8 @@
 %define nginx_webroot   %{nginx_datadir}/html
 
 Name:           nginx
-Version:        0.8.53
-Release:        6%{?dist}
+Version:        0.8.54
+Release:        2%{?dist}
 Summary:        Robust, small and high performance HTTP and reverse proxy server
 Group:          System Environment/Daemons   
 
@@ -190,6 +190,12 @@ fi
 
 
 %changelog
+* Mon Dec 20 2010 Sergio Rubio <rubiojr@frameos.org> - 0.8.54-2
+- More branding patches
+
+* Mon Dec 20 2010 Sergio Rubio <rubiojr@frameos.org> - 0.8.54-1
+- update to upstream 0.8.54
+
 * Mon Dec 20 2010 Sergio Rubio <rubiojr@frameos.org> - 0.8.53-6
 - FrameOS branding 
 - disable http_image_filter_module
