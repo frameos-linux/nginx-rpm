@@ -195,6 +195,9 @@ fi
 
 
 %changelog
+* Mon Dec 20 2010 Sergio Rubio <rubiojr@frameos.org> - 0.8.54-3
+- FIX: fixed RHEL5 build
+
 * Mon Dec 20 2010 Sergio Rubio <rubiojr@frameos.org> - 0.8.54-2
 - More branding patches
 
