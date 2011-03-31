@@ -19,7 +19,12 @@ License:        BSD
 URL:            http://nginx.net/ 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires:      pcre-devel,zlib-devel,openssl-devel,perl-devel,perl(ExtUtils::Embed)
+BuildRequires:      pcre-devel,zlib-devel,openssl-devel,perl(ExtUtils::Embed)
+
+%if 0%{?fedora} >= 8 || 0%{?rhel} >= 6
+BuildRequires: perl-devel
+%endif
+
 BuildRequires:      libxslt-devel,GeoIP-devel
 Requires:           pcre,openssl,GeoIP
 Requires:           perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
